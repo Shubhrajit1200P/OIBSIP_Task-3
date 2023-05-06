@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 700px;
+    max-height: 500px;
+    background: url('https://images.pexels.com/photos/831088/pexels-photo-831088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 5px rgba(29, 9, 9, 0.4);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.Temperature-icon{
+    font-size: 50px;
+    color: white;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+
+#celcius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+
+input{
+    flex: 5;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: black;
+    outline: auto;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input:hover{
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+.icon{
+    flex: 2;
+    height: 50px;
+    line-height: 50px;
+    padding: 2px, 5px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background: grey;
+    opacity: 0.9;
+    border-radius: 0 8px 8px 0;
+}
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button button:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
